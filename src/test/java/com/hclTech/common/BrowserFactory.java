@@ -21,7 +21,8 @@ public class BrowserFactory {
             driver = new EdgeDriver();
         }
         driver.manage().window().maximize();
-    }
+        System.outprintln("none");
+        }
  
     @AfterMethod
     public void tearDown() {
