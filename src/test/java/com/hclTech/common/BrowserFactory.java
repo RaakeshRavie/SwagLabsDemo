@@ -15,12 +15,12 @@ public class BrowserFactory {
             System.setProperty("webdriver.chrome.driver",
          		   "C:\\Users\\raakeshravie.s\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
             driver = new ChromeDriver();
-            System.out.println("Driver loader "+browser);
+            System.out.println("Driver loader: "+browser);
         } else if (browser.equalsIgnoreCase("edge")) {
             System.setProperty("webdriver.edge.driver",
 					"C:\\Users\\raakeshravie.s\\Downloads\\edgedriver_win64\\msedgedriver.exe");
             driver = new EdgeDriver();
-            System.out.println("Driver loader "+browser);
+            System.out.println("Driver loader: "+browser);
         }
         driver.manage().window().maximize();
     }
