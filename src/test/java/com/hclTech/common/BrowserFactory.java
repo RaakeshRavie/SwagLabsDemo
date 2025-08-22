@@ -6,7 +6,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.*;
  
 public class BrowserFactory {
-    protected WebDriver driver;
+    public static WebDriver driver;
  
     @Parameters("browser")
     @BeforeMethod
